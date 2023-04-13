@@ -1,6 +1,9 @@
 body{
     background-color: rgb(240,234,248);
 }
+
+
+
 #line{
     text-decoration: underline; 
     font-size: 10x;
@@ -26,21 +29,37 @@ body{
 
 .outbox{
     background-color: white;
-    width: 50%;
     border-radius: 8px;
     margin: 20px 10px 20px 10px;
     padding: 20px 10px 20px 10px;
 }
 
 .submit{
-    color: red;
-    padding: 10px 5px 10px 5px;
-    margin: 20px 10px 20px 10px;
-    display: grid;
+    color: red;  
+   
+
 }
 
 .box{
-  display: grid;
-  place-items: center;
-
+ width: 100%;
+ border: 2px solid red;
+ 
 }
+.subbox{
+    width: 40%;
+    /* margin: 0 auto; */
+    border: 2px solid yellow;
+    margin: 0px auto 0px auto;
+}
+input{
+    accent-color: purple;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .subbox{
+        width: 50%;
+    }
+  }
